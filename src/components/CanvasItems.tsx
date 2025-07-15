@@ -1,7 +1,7 @@
 "use client"
 import React, { Suspense } from 'react'
 import BaseBall from './BaseBall'
-import { Environment, OrbitControls } from '@react-three/drei'
+import { OrbitControls } from '@react-three/drei'
 import DirectionalLightWithHelper from './DirectionalLightWithHelper'
 
 export default function CanvasItems() {

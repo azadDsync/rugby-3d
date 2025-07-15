@@ -1,8 +1,8 @@
 'use client'
 import { useGLTF } from '@react-three/drei'
-import { useFrame, useThree } from '@react-three/fiber';
+import {useThree } from '@react-three/fiber';
 import gsap from 'gsap';
-import { useControls } from 'leva';
+
 import React, { useLayoutEffect, useRef } from 'react'
 import { Group } from 'three';
 
@@ -10,7 +10,7 @@ import { Group } from 'three';
 export default function Flamingo() {
   const { scene: modelScene } = useGLTF("/models/wilson_football.glb")
   const tl = gsap.timeline();
-  const { scene, camera } = useThree();
+  const { scene } = useThree();
   const modelRef = useRef<Group>(null!);
   // const {cameraPosition,scenePosition,sceneRotation} = useControls({
   //   cameraPosition:{
